@@ -1,7 +1,7 @@
 /* ===== CSS Variables & Reset ===== */
 :root {
     /* Colors */
-    /* --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    --primary-gradient: #a67c52;
     --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     --dark-gradient: #8f5319;
@@ -185,7 +185,7 @@ body::before {
 .logo h1 {
     font-size: 2.8rem;
     font-weight: 800;
-    background: linear-gradient(90deg, rgba(54,209,220,1) 0%, rgba(91,134,229,1) 100%);
+    background: rgb(198, 188, 171);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
