@@ -1,26 +1,26 @@
 /* ===== CSS Variables & Reset ===== */
 :root {
     /* Colors */
-    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
     --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    --dark-gradient: linear-gradient(135deg, #0d0d1a 0%, #121228 50%, #0d0d1a 100%);
-    --card-gradient: linear-gradient(160deg, rgba(30, 30, 60, 0.95) 0%, rgba(20, 20, 40, 0.95) 100%);
+    --dark-gradient: #8f5319;
+    --card-gradient: #FFDFBA;
     --glow-purple: rgba(102, 126, 234, 0.4);
     --glow-pink: rgba(240, 147, 251, 0.3);
 
-    --bg-primary: #080810;
-    --bg-secondary: #10101e;
+    --bg-primary: #fbf8eb;
+    --bg-secondary: #fbf8eb;
     --bg-card: rgba(18, 18, 36, 0.92);
     --bg-glass: rgba(255, 255, 255, 0.04);
     --bg-glass-hover: rgba(255, 255, 255, 0.08);
 
-    --text-primary: #f0f0ff;
-    --text-secondary: rgba(220, 220, 255, 0.7);
-    --text-muted: rgba(200, 200, 240, 0.45);
+    --text-primary: #494949;
+    --text-secondary: #494949;
+    --text-muted: #494949;
 
     --border-color: rgba(120, 120, 200, 0.12);
-    --border-hover: rgba(102, 126, 234, 0.35);
+    --border-hover: rgba(171, 124, 79, 0.35);
     --shadow-color: rgba(0, 0, 0, 0.3);
 
     /* Genre Colors */
@@ -54,6 +54,7 @@
 * {
     margin: 0;
     padding: 0;
+    
     box-sizing: border-box;
 }
 
@@ -118,7 +119,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--primary-gradient);
+    background: linear-gradient(to right, #07239F, #B4B7DF, #1151D4);
     opacity: 0.07;
     animation: headerPulse 10s ease-in-out infinite;
 }
@@ -131,7 +132,7 @@ body::before {
     transform: translateX(-50%);
     width: 60%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--glow-purple), transparent);
+    
 }
 
 @keyframes headerPulse {
@@ -184,7 +185,7 @@ body::before {
 .logo h1 {
     font-size: 2.8rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #8b9cf7 0%, #c084fc 50%, #f093fb 100%);
+    background: linear-gradient(90deg, rgba(54,209,220,1) 0%, rgba(91,134,229,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -267,12 +268,12 @@ body::before {
 
 .control-group select:hover {
     border-color: var(--border-hover);
-    background-color: rgba(20, 20, 40, 1);
+    background-color: #f2e6e6;
 }
 
 .control-group select:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #d6bb90;
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15), 0 0 20px rgba(102, 126, 234, 0.1);
 }
 
@@ -283,7 +284,7 @@ body::before {
     font-weight: 600;
     font-size: 0.9rem;
     white-space: nowrap;
-    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.25);
+    box-shadow: 0 4px 20px rgba(112, 79, 57, 0.25);
     letter-spacing: 0.3px;
 }
 
@@ -350,7 +351,7 @@ body::before {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(145deg, rgba(15, 15, 30, 1) 0%, rgba(25, 25, 50, 1) 100%);
+    background: linear-gradient(145deg, rgb(63, 63, 68) 0%, rgb(42, 42, 45) 100%);
 }
 
 .book-cover::before {
@@ -516,7 +517,7 @@ body::before {
 .book-price {
     font-size: 1.25rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #8b9cf7, #c084fc);
+    background: #494949;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -550,7 +551,7 @@ body::before {
     background: var(--primary-gradient);
     border-color: transparent;
     color: white;
-    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 20px rgba(153, 88, 60, 0.439);
 }
 
 .book-card:hover .view-detail .arrow {
@@ -583,7 +584,7 @@ body::before {
 }
 
 .modal {
-    background: linear-gradient(160deg, rgba(18, 18, 36, 0.98) 0%, rgba(12, 12, 28, 0.98) 100%);
+    background: #f7efca;
     border-radius: var(--radius-xl);
     border: 1px solid var(--border-color);
     max-width: 750px;
@@ -627,7 +628,7 @@ body::before {
     background: var(--secondary-gradient);
     border-color: transparent;
     transform: rotate(90deg) scale(1.1);
-    box-shadow: 0 4px 20px rgba(240, 147, 251, 0.3);
+    box-shadow: 0 4px 20px rgba(61, 59, 62, 0.3);
 }
 
 .modal-content {
