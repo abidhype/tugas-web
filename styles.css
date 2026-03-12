@@ -884,7 +884,7 @@ body::before {
         flex-direction: column;
         align-items: stretch;
         padding: var(--spacing-md);
-    }
+    } 
 
     .control-group {
         min-width: 100%;
